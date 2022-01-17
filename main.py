@@ -33,12 +33,15 @@ class Window:
         self.square_width = width // 8
         self.square_height = height // 8
 
+        self.icon = pygame.image.load("piece_images\icon.png")
+
         self.win = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Chess")
+        pygame.display.set_icon(self.icon)
         self.clock = pygame.time.Clock()
         self.fps = 15
 
-        # Load images
+        # Load piece images
 
         self.images = {}
         for image in os.listdir("piece_images"):
