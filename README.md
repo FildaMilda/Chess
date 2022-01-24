@@ -12,8 +12,3 @@ Illegal moves:
 - Moving a pawn to the last row and replacing it with any object that is not a Queen, Rook, Bishop, or Knight of the same color as the Pawn.
 - Make a move leaving your own King in check.
 - Castling when it is not valid to do so.
-
-You can set the board by passing FEN string to class Board(FEN). 
-Online FEN string generator:
-http://www.netreal.de/Forsyth-Edwards-Notation/index.php
-
