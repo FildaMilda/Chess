@@ -1,4 +1,4 @@
-from src.pieces import *
+from pieces import *
 
 def is_empty(l1):
 

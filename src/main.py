@@ -1,5 +1,5 @@
-from src.board import Board
-from src.window import Promote_window
+from board import Board
+from window import Promote_window
 
 import pygame
 import os
@@ -33,7 +33,7 @@ class Window:
         self.square_width = width // 8
         self.square_height = height // 8
 
-        self.icon = pygame.image.load("piece_images\icon.png")
+        self.icon = pygame.image.load("..\piece_images\icon.png")
 
         self.win = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Chess")
@@ -44,9 +44,9 @@ class Window:
         # Load piece images
 
         self.images = {}
-        for image in os.listdir("piece_images"):
+        for image in os.listdir("..\piece_images"):
 
-            self.images[image[:-4]] = pygame.transform.scale(pygame.image.load("piece_images/" + image), (self.square_width, self.square_height))
+            self.images[image[:-4]] = pygame.transform.scale(pygame.image.load("../piece_images/" + image), (self.square_width, self.square_height))
 
         self.selected_square = None
 
