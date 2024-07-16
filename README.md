@@ -11,10 +11,10 @@ pip install pygame
 ```
 
 ## Usage
-To run the chess interface, execute the main script:
+To run the chess interface, execute the main script inside src directory:
 
 ```bash
-python src/main.py
+python main.py
 ```
 
 The game window will open, displaying the chessboard with the starting position. 
